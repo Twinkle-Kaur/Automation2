@@ -29,7 +29,7 @@ public class Buttons extends HttpServlet{
 		        .withLogLevel(LogLevel.BASIC)
 		        .authenticate(credFile)
 		        .withDefaultSubscription();
-           VirtualMachine vm = azure.virtualMachines().getByResourceGroup("rg-iamlab", VM);
+           VirtualMachine vm = azure.virtualMachines().getByResourceGroup("rgname", VM);
            
            if(action.equalsIgnoreCase("start"))
            {
