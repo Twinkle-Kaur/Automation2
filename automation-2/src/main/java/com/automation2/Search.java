@@ -31,7 +31,7 @@ public class Search extends HttpServlet {
 		        .withLogLevel(LogLevel.BASIC)
 		        .authenticate(credFile)
 		        .withDefaultSubscription();
-		    	 vm1 = azure.virtualMachines().getByResourceGroup("rg-iamlab", VM);
+		    	 vm1 = azure.virtualMachines().getByResourceGroup("resourcegroupname", VM);
 		    	 if(vm1!=null) {
 		    		 return vm1;
 		    	 }
